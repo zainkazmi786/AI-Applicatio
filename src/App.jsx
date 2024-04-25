@@ -4,6 +4,8 @@ import './App.css'
 import openAI from './assets/openAI.jpg'
 import ai from './assets/ai.jpg'
 import Navbar from './components/navbar'
+import Graph from './components/graph'
+
 
 
 function App() {
@@ -37,7 +39,10 @@ function App() {
             <div className='text-white text-3xl font-thin leading-relaxed text-justify'>Ready to witness the impact of AI in action? Dive into our data-driven exploration below. With interactive graphs at your fingertips, we showcase the tangible effects of artificial intelligence on our evolving work and lifestyles. From the surge of AI adoption to the shifting job landscape, our visuals illuminate the dynamic interplay between technology and society. Join us as we uncover the trends, patterns, and insights shaping our AI-powered future.</div>
           </div>
           <div className="gsection flex w-full gap-10">
-            <div className="box w-1/2 rounded-3xl h-96 bg-black  shadow-white shadow-lg"></div>
+            <div className="box w-1/2 rounded-3xl h-96 bg-black  shadow-white shadow-lg flex items-center justify-center">
+            <Graph xAxisData={["Nov 22", "Dec 22", "Jan 23", "Feb 23", "Mar 23", "Apr 23", "May 23", "Jun 23" ,"Jul 23", "Aug 23", "Sep 23" , "Oct 23", "Nov 23" ,"Dec 23" , "Jan 24"]} yAxisData={[0.15, 0.266, 0.616, 1, 1.6, 1.8, 1.8,1.6,1.5,1.4,1.4,1.5,1.7,1.7,1.6]} />
+            
+              </div>
             <div className="box w-1/2 rounded-3xl h-96 bg-black shadow-white  shadow-lg"></div>
           </div>
           <div className="para1 flex flex-col gap-10">
